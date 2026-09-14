@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평일 1만원 캠핑 활성화 프로젝트</title>
+    
+    <!-- 이미지 로딩 속도 최적화 (가장 먼저 불러오기 및 서버 사전 연결) -->
+    <link rel="preconnect" href="https://i.postimg.cc" crossorigin>
+    <link rel="dns-prefetch" href="https://i.postimg.cc">
+    <link rel="preload" as="image" href="https://i.postimg.cc/02B78SjD/jemog-eul-iblyeoghaseyo-1.png">
+    <link rel="preload" as="image" href="https://i.postimg.cc/hP5VSmvm/jemog-eul-iblyeoghaseyo-2.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f4f1eb;
+            word-break: keep-all;
+        }
+        
+        .highlight {
+            background: linear-gradient(180deg, rgba(255,255,255,0) 55%, #ffd000 45%);
+            display: inline;
+            padding: 0 4px;
+        }
+
+        .underline-point {
+            text-decoration: underline;
+            text-decoration-color: #ea580c;
+            text-decoration-thickness: 4px;
+            text-underline-offset: 6px;
+        }
+
+        @keyframes bounce-down {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(12px); }
+        }
+        .animate-bounce-down {
+            animation: bounce-down 2s infinite;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-[#2d2a26] antialiased bg-[#f4f1eb]">
+
+    <!-- 하단 플로팅 바가 삭제되었으므로 pb-32 여백을 pb-10으로 줄임 -->
+    <main class="max-w-[860px] mx-auto bg-[#f4f1eb] relative pb-10 shadow-2xl overflow-hidden min-h-screen">
+        
+        <!-- 섹션 1: 도입부 -->
+        <section class="pt-32 pb-24 px-10 text-center flex flex-col items-center">
+            <div class="fade-up w-full">
+                <p class="text-2xl text-[#c2410c] font-bold mb-6 tracking-tight">
+                    늘 비어있는 평일 사이트,
+                </p>
+                <p class="text-4xl font-bold mb-8 tracking-tight">
+                    가장 확실하게 채울 수 있는 단 하나의 방법
+                </p>
+                <h1 class="text-7xl font-black leading-tight tracking-tighter mb-12">
+                    평일 캠핑 <span class="highlight text-8xl">1만 원</span>
+                </h1>
+                
+                <!-- 최적화된 이미지 적용 -->
+                <div class="flex justify-center items-center gap-6 mb-16 mt-8">
+                    <div class="flex flex-col items-center">
+                        <img src="https://i.postimg.cc/02B78SjD/jemog-eul-iblyeoghaseyo-1.png" alt="빈 사이트" fetchpriority="high" loading="eager" decoding="sync" class="w-48 h-48 object-cover rounded-3xl shadow-sm border border-[#e6e2d8]">
+                    </div>
+                    <div class="text-5xl text-[#ea580c] font-black flex items-center justify-center">▶</div>
+                    <div class="flex flex-col items-center">
+                        <img src="https://i.postimg.cc/hP5VSmvm/jemog-eul-iblyeoghaseyo-2.png" alt="채워진 사이트" fetchpriority="high" loading="eager" decoding="sync" class="w-48 h-48 object-cover rounded-3xl shadow-md border-2 border-[#ea580c]">
+                    </div>
+                </div>
+
+                <p class="text-2xl font-semibold text-[#59534c] mt-12 opacity-90">
+                    "사장님, 혹시 이렇게 생각하셨나요?"
+                </p>
+            </div>
+            
+            <div class="mt-12 flex justify-center w-full">
+                <div class="text-[#c2410c]">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M19 12l-7 7-7-7"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 2: 반론 극복 (수익 구조) -->
+        <section class="pt-20 pb-20 px-10">
+            <div class="fade-up">
+                <h2 class="text-5xl font-bold leading-snug mb-6 tracking-tight">
+                    사이트 비용을<br>
+                    <span class="highlight">1만 원만 받으면</span><br>
+                    도대체 뭐가 남나요?
+                </h2>
+                <p class="text-3xl font-black text-[#ea580c] mb-14 tracking-tight">
+                    아닙니다! 사장님의 정산금은 전혀 다릅니다.
+                </p>
+            </div>
+
+            <div class="fade-up bg-white rounded-2xl p-10 shadow-md mb-8 border border-gray-100">
+                <div class="space-y-6">
+                    <div class="flex justify-between items-center text-2xl font-medium text-gray-600">
+                        <span>소비자 결제금액</span>
+                        <span class="font-bold text-gray-900">10,000 원</span>
+                    </div>
+                    <div class="flex justify-between items-center text-2xl font-medium text-gray-600">
+                        <span>정부지원쿠폰 (지원금)</span>
+                        <span class="font-bold text-[#2563eb]">+ 20,000 원</span>
+                    </div>
+                    <div class="w-full h-px bg-gray-200 my-6"></div>
+                    <div class="flex justify-between items-center text-4xl font-black">
+                        <span>캠핑장 최종 정산금</span>
+                        <span class="text-[#ea580c]">총 30,000 원</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fade-up mt-8">
+                <span class="text-2xl font-bold text-[#1a392c] underline-point">
+                    차감 없이 100% 정상 정산됩니다.
+                </span>
+            </div>
+        </section>
+
+        <!-- 섹션 3: 전략 제안 -->
+        <section class="py-32 px-10">
+            <div class="fade-up text-center">
+                <h2 class="text-5xl font-bold leading-snug mb-14 tracking-tight">
+                    평일 사이트 비용을<br>
+                    <span class="highlight text-[#1a392c]">3만 원으로 낮춰보세요.</span>
+                </h2>
+                <p class="text-4xl font-black text-[#2d2a26] mb-12">
+                    평일 캠핑 1만 원이면 <span class="text-[#ea580c]">분명히 옵니다!</span>
+                </p>
+            </div>
+
+            <div class="fade-up flex flex-col gap-6 mb-16">
+                <div class="bg-white px-12 py-6 rounded-2xl shadow-sm flex flex-col items-center gap-3 w-max mx-auto border border-[#e6e2d8]">
+                    <div class="bg-[#f0f9ff] text-[#0369a1] font-bold px-6 py-2 rounded-full text-lg text-center">
+                        고객 부담
+                    </div>
+                    <div class="text-3xl font-black text-gray-800">
+                        대폭 감소 ↓
+                    </div>
+                </div>
+                <div class="bg-white px-12 py-6 rounded-2xl shadow-sm flex flex-col items-center gap-3 w-max mx-auto border border-[#e6e2d8]">
+                    <div class="bg-[#f0fdf4] text-[#15803d] font-bold px-6 py-2 rounded-full text-lg text-center">
+                        할인 부담
+                    </div>
+                    <div class="text-3xl font-black text-gray-800">
+                        전혀 없음 ↓
+                    </div>
+                </div>
+                <div class="bg-white px-12 py-6 rounded-2xl shadow-sm flex flex-col items-center gap-3 w-max mx-auto border border-[#e6e2d8]">
+                    <div class="bg-[#fff7ed] text-[#c2410c] font-bold px-6 py-2 rounded-full text-lg text-center">
+                        평일 예약
+                    </div>
+                    <div class="text-3xl font-black text-[#ea580c]">
+                        확실한 증가 ↑
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 4: 흐름도 -->
+        <section class="py-32 px-10">
+            <div class="fade-up mb-20">
+                <h2 class="text-4xl font-bold leading-snug tracking-tight">
+                    빈자리로 남던 평일,<br>
+                    이런 흐름으로 채워집니다.
+                </h2>
+            </div>
+
+            <div class="fade-up relative pl-4">
+                <div class="absolute left-[54px] top-12 bottom-12 w-1 bg-[#d6d1c4] rounded"></div>
+
+                <div class="space-y-16">
+                    <div class="flex items-center gap-8 relative z-10">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-gray-400 font-black text-xl border-4 border-[#e6e2d8] shadow-sm shrink-0">
+                            01
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-500">
+                                가격 때문에 망설였던 솔로 캠퍼
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-8 relative z-10">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-[#0369a1] font-black text-xl border-4 border-[#bae6fd] shadow-sm shrink-0">
+                            02
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-[#0369a1]">
+                                1만 원의 매력으로 방문 유도
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-8 relative z-10">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center text-[#ea580c] font-black text-xl border-4 border-[#fed7aa] shadow-sm shrink-0">
+                            03
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-[#ea580c]">
+                                비어있던 평일 예약 확보
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-8 relative z-10">
+                        <div class="w-20 h-20 bg-[#1a392c] rounded-full flex items-center justify-center text-white font-black text-xl border-4 border-[#1a392c] shadow-md shrink-0">
+                            04
+                        </div>
+                        <div>
+                            <h3 class="text-4xl font-black text-[#1a392c] leading-snug">
+                                주말 중심에서<br>
+                                <span class="text-[#ea580c]">평일까지 채우는</span> 캠핑장
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 5: 왜 솔로캠핑과 평일인가? -->
+        <section class="py-32 px-10">
+            <div class="fade-up mb-20">
+                <h2 class="text-5xl font-bold leading-snug tracking-tight">
+                    왜 하필<br>
+                    <span class="underline-point text-[#1a392c]">‘솔로 캠핑 × 평일’</span> 일까요?
+                </h2>
+            </div>
+
+            <div class="space-y-16 fade-up">
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-[#e6e2d8]">
+                    <div class="text-[#ea580c] font-black text-2xl mb-4">01. 혼자라서 평일에도 움직이기 쉽습니다.</div>
+                    <p class="text-xl text-[#59534c] leading-relaxed font-medium">
+                        커플이나 가족 단위보다 일정 선택이 상대적으로 자유로운 고객을<br>
+                        평일 캠핑 수요로 확실하게 연결할 수 있습니다.
+                    </p>
+                </div>
+
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-[#e6e2d8]">
+                    <div class="text-[#ea580c] font-black text-2xl mb-4">02. 1만 원이면 가격 부담이 확 낮아집니다.</div>
+                    <p class="text-xl text-[#59534c] leading-relaxed font-medium">
+                        혼자 3만 원을 온전히 부담해야 했던 고객에게<br>
+                        정부지원쿠폰 적용 후 1만 원이라는 매력적인 가격을 제안합니다.
+                    </p>
+                </div>
+
+                <div class="bg-white p-10 rounded-2xl shadow-sm border border-[#e6e2d8]">
+                    <div class="text-[#ea580c] font-black text-2xl mb-4">03. 캠핑장은 평일 공실을 활용할 수 있습니다.</div>
+                    <p class="text-xl text-[#59534c] leading-relaxed font-medium">
+                        평소 비어 있던 일요일부터 목요일 사이트에 예약을 유도해<br>
+                        이전에 없던 새로운 평일 매출을 만들어볼 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 6: 비전 제시 -->
+        <section class="py-32 px-10">
+            <div class="fade-up bg-white rounded-3xl p-14 relative overflow-hidden shadow-sm border border-[#e6e2d8]">
+                <h2 class="text-4xl font-bold leading-snug mb-16 relative z-10 text-center text-[#2d2a26]">
+                    <span class="highlight border-b-2 border-[#ea580c] pb-1 text-[#ea580c]">1만 원 캠핑</span>으로<br>
+                    평일에 움직이는 캠퍼를 만드세요.
+                </h2>
+                
+                <div class="space-y-8 relative z-10">
+                    <div class="bg-[#f4f1eb] p-8 rounded-2xl border border-[#d6d1c4]">
+                        <div class="text-xl font-bold text-[#1a392c] mb-3">캠퍼에게는</div>
+                        <p class="text-3xl font-black text-[#2d2a26]">“1만 원이면 오늘 혼자 캠핑 가볼까?”</p>
+                    </div>
+                    
+                    <div class="bg-[#fff7ed] p-8 rounded-2xl border border-[#fed7aa]">
+                        <div class="text-xl font-bold text-[#ea580c] mb-3">캠핑장에는</div>
+                        <p class="text-3xl font-black text-[#2d2a26]">“비어 있던 평일 사이트에 예약이 들어오네!”</p>
+                    </div>
+                </div>
+
+                <div class="mt-20 text-2xl font-medium leading-relaxed relative z-10 text-center text-[#59534c]">
+                    고객과 캠핑장 모두에게 좋은 이유가 있는<br>
+                    <span class="text-3xl font-black text-[#1a392c] mt-3 inline-block underline-point">평일 캠핑 활성화 프로젝트</span>입니다.
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 7: 모집 요강 -->
+        <section class="pt-24 pb-16 px-10">
+            <div class="fade-up">
+                <h2 class="text-5xl font-black mb-16 text-center text-[#1c3624]">참여 캠핑장 모집 안내</h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e6e2d8] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10">
+                        <span class="font-bold text-[#8c8273] w-32 shrink-0 text-2xl">모집 기간</span>
+                        <span class="font-black text-3xl text-[#2d2a26]">9월 15일 ~ 9월 27일까지 <span class="text-[#ea580c] text-2xl ml-2">(가평지역한정)</span></span>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e6e2d8] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-10">
+                        <span class="font-bold text-[#8c8273] w-32 shrink-0 text-2xl">입실 기간</span>
+                        <span class="font-black text-3xl text-[#2d2a26]">10월 1일 ~ 11월 15일까지</span>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#e6e2d8] flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-10">
+                        <span class="font-bold text-[#8c8273] w-32 shrink-0 text-2xl pt-1">대상 요일</span>
+                        <div class="flex flex-col">
+                            <span class="font-black text-3xl text-[#2d2a26]">일요일 ~ 목요일 (총 5일)</span>
+                            <span class="text-xl font-medium text-[#ea580c] mt-3 bg-[#fff7ed] inline-block px-4 py-2 rounded-lg w-max">* 금요일, 토요일, 공휴일 전날 제외</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-[#1c3624] flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-10 relative overflow-hidden">
+                        <span class="font-bold text-[#1c3624] w-32 shrink-0 text-2xl pt-1 relative z-10">요금 구조</span>
+                        <div class="w-full relative z-10">
+                            <div class="grid grid-cols-2 gap-y-6 gap-x-2 text-2xl font-medium">
+                                <div class="text-gray-600">평일요금 설정</div>
+                                <div class="font-bold text-right text-gray-900">30,000 원</div>
+                                
+                                <div class="text-gray-600">정부지원쿠폰</div>
+                                <div class="font-bold text-[#2563eb] text-right">- 20,000 원</div>
+                                
+                                <div class="col-span-2 h-px bg-gray-200 my-2"></div>
+                                
+                                <div class="text-gray-900 font-bold">고객 결제금액</div>
+                                <div class="font-black text-right text-3xl text-[#ea580c]">10,000 원</div>
+                                
+                                <div class="col-span-2 bg-white border border-[#ea580c] text-[#ea580c] p-6 rounded-xl mt-6 text-center font-black text-2xl shadow-sm">
+                                    캠핑장 최종 정산 : 30,000원 (100% 정산)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 8: 프로젝트 참가 신청 폼 -->
+        <section id="apply-section" class="pt-10 pb-20 px-10">
+            <div class="fade-up bg-white p-12 rounded-3xl shadow-md border border-[#e6e2d8]">
+                <!-- 새로 추가된 신청 유도 텍스트 -->
+                <div class="text-center mb-4">
+                    <p class="text-2xl font-bold text-[#ea580c] leading-snug">
+                        평일 도 채우고 싶으시면<br>지금 바로 신청하세요
+                    </p>
+                </div>
+                <h2 class="text-4xl font-black mb-10 text-center text-[#1c3624]">프로젝트 참가 신청</h2>
+                <form id="applyForm" class="space-y-6 max-w-lg mx-auto">
+                    <div>
+                        <label for="campName" class="block text-xl font-bold text-gray-700 mb-3">캠핑장명</label>
+                        <input type="text" id="campName" required class="w-full px-5 py-4 bg-gray-50 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ea580c] focus:border-[#ea580c] outline-none transition-all text-xl" placeholder="예) 땡큐캠핑장">
+                    </div>
+                    <div>
+                        <label for="managerName" class="block text-xl font-bold text-gray-700 mb-3">담당자명</label>
+                        <input type="text" id="managerName" required class="w-full px-5 py-4 bg-gray-50 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ea580c] focus:border-[#ea580c] outline-none transition-all text-xl" placeholder="예) 홍길동">
+                    </div>
+                    <div>
+                        <label for="phoneNumber" class="block text-xl font-bold text-gray-700 mb-3">전화번호</label>
+                        <input type="tel" id="phoneNumber" required maxlength="13" class="w-full px-5 py-4 bg-gray-50 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#ea580c] focus:border-[#ea580c] outline-none transition-all text-xl" placeholder="010-0000-0000">
+                    </div>
+                    <button type="submit" class="w-full bg-[#ea580c] hover:bg-[#c2410c] text-white text-2xl font-black py-5 rounded-xl transition-colors shadow-lg mt-8">
+                        신청 완료하기
+                    </button>
+                </form>
+            </div>
+            
+            <!-- 관리자 페이지 진입 버튼 -->
+            <div class="text-center mt-10">
+                <button onclick="openPasswordModal()" class="text-[#d6d1c4] hover:text-gray-400 text-sm font-medium transition-colors">
+                    관리자페이지
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 커스텀 알림 모달 -->
+    <div id="customAlertModal" class="fixed inset-0 z-[100] bg-black/60 hidden items-center justify-center opacity-0 transition-opacity duration-300">
+        <div class="bg-white p-10 rounded-3xl max-w-sm w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300 text-center">
+            <p id="alertMessage" class="text-xl font-bold text-gray-800 mb-8 word-break-keep leading-relaxed"></p>
+            <button onclick="closeAlert()" class="bg-[#ea580c] text-white px-6 py-4 rounded-xl font-black text-lg w-full hover:bg-[#c2410c]">확인</button>
+        </div>
+    </div>
+
+    <!-- 비밀번호 입력 모달 -->
+    <div id="passwordModal" class="fixed inset-0 z-[100] bg-black/60 hidden items-center justify-center opacity-0 transition-opacity duration-300">
+        <div class="bg-white p-10 rounded-3xl max-w-sm w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300">
+            <h3 class="text-2xl font-black text-center mb-6 text-[#1c3624]">관리자 로그인</h3>
+            <input type="password" id="adminPassword" class="w-full px-5 py-4 bg-gray-50 border border-gray-300 rounded-xl mb-6 focus:ring-2 focus:ring-[#1c3624] outline-none" placeholder="비밀번호 입력" onkeypress="if(event.key==='Enter') verifyAdmin()">
+            <div class="flex gap-3">
+                <button onclick="closePasswordModal()" class="flex-1 bg-gray-200 text-gray-700 px-4 py-4 rounded-xl font-bold hover:bg-gray-300">취소</button>
+                <button onclick="verifyAdmin()" class="flex-1 bg-[#1c3624] text-white px-4 py-4 rounded-xl font-bold hover:bg-black">접속</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 정보 수정 모달 -->
+    <div id="editModal" class="fixed inset-0 z-[200] bg-black/60 hidden items-center justify-center opacity-0 transition-opacity duration-300">
+        <div class="bg-white p-10 rounded-3xl max-w-sm w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300">
+            <h3 class="text-2xl font-black text-center mb-6">정보 수정</h3>
+            <input type="hidden" id="editIndex">
+            <div class="space-y-4 mb-8">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">캠핑장명</label>
+                    <input type="text" id="editCampName" class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-800 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">담당자</label>
+                    <input type="text" id="editManagerName" class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-800 outline-none">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">전화번호</label>
+                    <input type="tel" id="editPhoneNumber" maxlength="13" class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-800 outline-none">
+                </div>
+            </div>
+            <div class="flex gap-3">
+                <button onclick="closeEditModal()" class="flex-1 bg-gray-200 text-gray-700 px-4 py-4 rounded-xl font-bold hover:bg-gray-300">취소</button>
+                <button onclick="saveEdit()" class="flex-1 bg-gray-800 text-white px-4 py-4 rounded-xl font-bold hover:bg-gray-900">저장</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 관리자 대시보드 오버레이 (엑셀 다운로드 버튼 추가) -->
+    <div id="adminDashboard" class="fixed inset-0 z-[150] bg-[#f4f1eb] hidden flex-col overflow-y-auto">
+        <div class="max-w-[860px] mx-auto w-full bg-white min-h-screen p-8 sm:p-12 shadow-2xl relative">
+            <div class="flex justify-between items-center mb-10 border-b pb-6">
+                <h2 class="text-3xl font-black text-[#1c3624]">신청 캠핑장 리스트</h2>
+                <div class="flex gap-3">
+                    <button onclick="downloadExcel()" class="bg-[#107c41] text-white hover:bg-[#0c5a2f] font-bold px-5 py-3 rounded-xl transition-colors shadow-sm">엑셀 다운로드</button>
+                    <button onclick="closeAdminDashboard()" class="text-gray-500 hover:text-gray-800 font-bold px-5 py-3 bg-gray-100 rounded-xl">닫기</button>
+                </div>
+            </div>
+            
+            <div class="overflow-x-auto rounded-xl border border-gray-200">
+                <table class="w-full text-left border-collapse min-w-[650px]">
+                    <thead>
+                        <tr class="bg-gray-50 text-gray-700 border-b border-gray-200">
+                            <th class="py-4 px-5 font-bold">신청일시</th>
+                            <th class="py-4 px-5 font-bold">캠핑장명</th>
+                            <th class="py-4 px-5 font-bold">담당자</th>
+                            <th class="py-4 px-5 font-bold">전화번호</th>
+                            <th class="py-4 px-5 font-bold text-center">관리</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminTableBody">
+                        <!-- JS 렌더링 영역 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 1. 스크롤 페이드업 애니메이션
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-up');
+            fadeElements.forEach(el => observer.observe(el));
+            
+            // 2. 전화번호 자동 하이픈 (-) 처리 함수
+            const phoneInput = document.getElementById('phoneNumber');
+            const editPhoneInput = document.getElementById('editPhoneNumber');
+            
+            function autoHyphen(target) {
+                target.value = target.value
+                    .replace(/[^0-9]/g, '')
+                    .replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, (match, p1, p2, p3) => {
+                        let res = "";
+                        if(p1) res += p1;
+                        if(p2) res += "-" + p2;
+                        if(p3) res += "-" + p3;
+                        return res;
+                    }).replace(/(\-{1,2})$/g, "");
+            }
+            
+            if(phoneInput) phoneInput.addEventListener('input', (e) => autoHyphen(e.target));
+            if(editPhoneInput) editPhoneInput.addEventListener('input', (e) => autoHyphen(e.target));
+
+            // 3. 폼 제출 및 중복 검사 로직
+            const applyForm = document.getElementById('applyForm');
+            if(applyForm) {
+                applyForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const campName = document.getElementById('campName').value.trim();
+                    const manager = document.getElementById('managerName').value.trim();
+                    const phone = document.getElementById('phoneNumber').value.trim();
+                    
+                    let applications = JSON.parse(localStorage.getItem('campingApplications')) || [];
+                    
+                    // 중복 체크 로직 (전화번호 기준)
+                    const isDuplicate = applications.some(app => app.phone === phone);
+                    
+                    if(isDuplicate) {
+                        showAlert("이미 신청 내역이 있습니다.<br><span class='text-[#ea580c]'>땡큐캠핑 고객센터</span>로 문의 해주세요.");
+                        return;
+                    }
+                    
+                    // 데이터 저장 (타임스탬프 기반 정렬)
+                    const today = new Date();
+                    const dateStr = `${today.getFullYear()}.${String(today.getMonth()+1).padStart(2, '0')}.${String(today.getDate()).padStart(2, '0')} ${String(today.getHours()).padStart(2, '0')}:${String(today.getMinutes()).padStart(2, '0')}`;
+                    
+                    applications.push({
+                        date: dateStr,
+                        campName: campName,
+                        manager: manager,
+                        phone: phone,
+                        timestamp: today.getTime()
+                    });
+                    
+                    localStorage.setItem('campingApplications', JSON.stringify(applications));
+                    showAlert("참여 신청이 완료되었습니다!<br>빠른 시일 내에 연락드리겠습니다.");
+                    applyForm.reset();
+                });
+            }
+        });
+
+        // 4. 커스텀 모달 컨트롤러 (오픈/클로즈 애니메이션 포함)
+        function showAlert(msg) {
+            const modal = document.getElementById('customAlertModal');
+            document.getElementById('alertMessage').innerHTML = msg;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.children[0].classList.remove('scale-95');
+            }, 10);
+        }
+
+        function closeAlert() {
+            const modal = document.getElementById('customAlertModal');
+            modal.classList.add('opacity-0');
+            modal.children[0].classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+
+        function openPasswordModal() {
+            const modal = document.getElementById('passwordModal');
+            document.getElementById('adminPassword').value = '';
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.children[0].classList.remove('scale-95');
+                document.getElementById('adminPassword').focus();
+            }, 10);
+        }
+
+        function closePasswordModal() {
+            const modal = document.getElementById('passwordModal');
+            modal.classList.add('opacity-0');
+            modal.children[0].classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+
+        // 5. 관리자 기능 로직
+        function verifyAdmin() {
+            const pw = document.getElementById('adminPassword').value;
+            if(pw === 'Net0521') {
+                closePasswordModal();
+                openAdminDashboard();
+            } else {
+                showAlert("비밀번호가 일치하지 않습니다.");
+            }
+        }
+
+        function openAdminDashboard() {
+            const dashboard = document.getElementById('adminDashboard');
+            dashboard.classList.remove('hidden');
+            dashboard.classList.add('flex');
+            renderAdminTable();
+        }
+
+        function closeAdminDashboard() {
+            const dashboard = document.getElementById('adminDashboard');
+            dashboard.classList.add('hidden');
+            dashboard.classList.remove('flex');
+        }
+
+        function renderAdminTable() {
+            const tbody = document.getElementById('adminTableBody');
+            let applications = JSON.parse(localStorage.getItem('campingApplications')) || [];
+            
+            // 최신 날짜순 정렬
+            applications.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+            
+            tbody.innerHTML = '';
+            
+            if(applications.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="py-12 text-center text-gray-500 font-bold text-lg">아직 신청된 내역이 없습니다.</td></tr>';
+                return;
+            }
+            
+            applications.forEach((app, index) => {
+                const tr = document.createElement('tr');
+                tr.className = "border-b border-gray-100 hover:bg-gray-50 transition-colors";
+                tr.innerHTML = `
+                    <td class="py-4 px-5 text-gray-500 font-medium text-sm">${app.date}</td>
+                    <td class="py-4 px-5 font-black text-gray-900">${app.campName}</td>
+                    <td class="py-4 px-5 text-gray-800">${app.manager}</td>
+                    <td class="py-4 px-5 text-gray-600 font-medium">${app.phone}</td>
+                    <td class="py-4 px-5 text-center">
+                        <button onclick="openEditModal(${index})" class="text-sm bg-gray-200 text-gray-700 px-3 py-2 rounded-lg hover:bg-gray-300 mr-1 font-bold">수정</button>
+                        <button onclick="deleteApp(${index})" class="text-sm bg-red-50 text-red-500 px-3 py-2 rounded-lg hover:bg-red-100 font-bold">삭제</button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function deleteApp(index) {
+            let applications = JSON.parse(localStorage.getItem('campingApplications')) || [];
+            applications.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+            applications.splice(index, 1);
+            localStorage.setItem('campingApplications', JSON.stringify(applications));
+            
+            renderAdminTable();
+            showAlert("해당 내역이 안전하게 삭제되었습니다.");
+        }
+
+        function openEditModal(index) {
+            let applications = JSON.parse(localStorage.getItem('campingApplications')) || [];
+            applications.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+            const app = applications[index];
+            
+            document.getElementById('editIndex').value = index;
+            document.getElementById('editCampName').value = app.campName;
+            document.getElementById('editManagerName').value = app.manager;
+            document.getElementById('editPhoneNumber').value = app.phone;
+            
+            const modal = document.getElementById('editModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.children[0].classList.remove('scale-95');
+            }, 10);
+        }
+
+        function closeEditModal() {
+            const modal = document.getElementById('editModal');
+            modal.classList.add('opacity-0');
+            modal.children[0].classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
+
+        function saveEdit() {
+            const index = document.getElementById('editIndex').value;
+            const newName = document.getElementById('editCampName').value.trim();
+            const newManager = document.getElementById('editManagerName').value.trim();
+            const newPhone = document.getElementById('editPhoneNumber').value.trim();
+            
+            if(!newName || !newManager || !newPhone) {
+                showAlert("수정할 정보를 모두 입력해주세요.");
+                return;
+            }
+
+            let applications = JSON.parse(localStorage.getItem('campingApplications')) || [];
+            applications.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+            
+            applications[index].campName = newName;
+            applications[index].manager = newManager;
+            applications[index].phone = newPhone;
+            
+            localStorage.setItem('campingApplications', JSON.stringify(applications));
+            closeEditModal();
+            renderAdminTable();
+            showAlert("정보가 성공적으로 수정되었습니다.");
+        }
+        
+        // 6. 엑셀(CSV) 다운로드 기능
+        function downloadExcel() {
+            let applications = JSON.parse(localStorage.getItem('campingApplications')) || [];
+            if(applications.length === 0) {
+                showAlert("다운로드할 데이터가 없습니다.");
+                return;
+            }
+            
+            // 엑셀에서 한글이 깨지지 않도록 UTF-8 BOM 추가
+            let csvContent = "\uFEFF";
+            csvContent += "신청일시,캠핑장명,담당자,전화번호\n";
+            
+            // 최신 날짜순 정렬
+            applications.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+            
+            applications.forEach(app => {
+                // 데이터 내부에 콤마(,)가 있을 경우를 대비하여 쌍따옴표로 감싸기
+                let row = `"${app.date}","${app.campName}","${app.manager}","${app.phone}"`;
+                csvContent += row + "\n";
+            });
+            
+            // Blob 객체 생성
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement("a");
+            const url = URL.createObjectURL(blob);
+            
+            // 현재 날짜를 파일명에 추가
+            const today = new Date();
+            const dateStr = `${today.getFullYear()}${String(today.getMonth()+1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`;
+            
+            link.setAttribute("href", url);
+            link.setAttribute("download", `캠핑장_신청리스트_${dateStr}.csv`);
+            link.style.visibility = 'hidden';
+            
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
